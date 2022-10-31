@@ -769,6 +769,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   width: 528px;
   height: 581px;
   transform: translate(-50%, -50%) scale(1);
@@ -836,7 +837,7 @@ body {
 }
 
 .footer-email {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .title-form {
@@ -856,6 +857,7 @@ body {
   background-color: var(--color-background);
   width: 358px;
   height: 50px;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #ffffff;
@@ -875,15 +877,16 @@ body {
 
 .footer-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-form {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 0;
-  margin-left: 12px;
+  padding: 10px 28px;
   border: none;
   background-color: var(--color-accent);
   color: var(--color-white);
@@ -918,11 +921,8 @@ body {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 40px 40px 0 40px;
-}
-
-.contact-form {
-  margin: 12px 40px 0 40px;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .form-label {
@@ -933,7 +933,6 @@ body {
   line-height: 1.15;
   letter-spacing: 0.01em;
   margin-top: 10px;
-  margin-bottom: 4px;
 }
 
 .form-control {
@@ -943,6 +942,7 @@ body {
 .form-input {
   width: 100%;
   height: 40px;
+  margin-top: 4px;
   padding: 12px 12px 12px 32px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -965,11 +965,13 @@ body {
   fill: var(--color-title);
   top: 50%;
   left: 12px;
+  transform: translateY(-50%);
 }
 
 .form-textarea {
   width: 100%;
   height: 120px;
+  margin-top: 4px;
   padding: 12px 16px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -999,17 +1001,19 @@ body {
   color: var(--color-accent);
 }
 .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 .checkbox-label {
-  padding-left: 36px;
+  margin-left: 8px;
 }
 .checkbox-icon {
   content: '';
   position: absolute;
-  z-index: -1;
   fill: var(--color-white);
   fill-opacity: 0;
   top: 50%;
@@ -1031,26 +1035,30 @@ body {
 }
 
 .button-checkbox {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 200px;
   height: 50px;
+
   margin-left: auto;
   margin-right: auto;
   padding: 10px 52px;
-  margin-bottom: 40px;
   background-color: var(--color-accent);
   border: none;
   border-radius: 4px;
   color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: box-shadow 250ms var(--transition-effect);
+  transition: background-color 250ms var(--transition-effect);
 }
 
 .button-checkbox:hover,
 .button-checkbox:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #188ce8;
 }
